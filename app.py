@@ -3,7 +3,7 @@ import solara
 # 1. 匯入您所有的「頁面」檔案
 import page_home
 import page_map
-import page_3d_map
+import page_3dmap
 
 # --- 2. 定義路由 (網站地圖) ---
 # 這是您 App 的核心
@@ -14,9 +14,9 @@ routes = [
     
     # 路徑 "/map" 會執行 page_map.py 裡的 Page 元件
     solara.Route(path="/map", component=page_map.Page, label="2D 互動地圖"),
-    
-    # 路徑 "/map-3d" 會執行 page_3d_map.py 裡的 Page 元件 (Lab 9)
-    solara.Route(path="/map-3d", component=page_3d_map.Page, label="3D 地形圖 (Lab 9)"),
+
+    # 路徑 "/map-3d" 會執行 page_3dmap.py 裡的 Page 元件 (Lab 9)
+    solara.Route(path="/map-3d", component=page_3dmap.Page, label="3D 地形圖 (Lab 9)"),
 ]
 
 # --- 3. 定義主佈局 (Layout)，包含導覽 ---
